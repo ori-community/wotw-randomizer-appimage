@@ -7,8 +7,8 @@
 #include <unistd.h>
 
 void set_env(const std::string& name, const std::string& value) {
-    std::string new_env(std::format("{}={}", name, value));
-    putenv(new_env.data());
+    std::cout << std::format("Setting environment: {}={}", name, value) << std::endl;
+    setenv(name.c_str(), value.c_str(), 1);
 }
 
 int main(int argc, char* argv[]) {

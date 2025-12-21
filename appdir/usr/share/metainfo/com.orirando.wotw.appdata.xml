@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+    <id>com.orirando.wotw</id>
+    <metadata_license>MIT</metadata_license>
+    <project_license>MIT</project_license>
+    <name>Ori and the Will of the Wisps Randomizer</name>
+    <summary>Randomizer for the game Ori and the Will of the Wisps</summary>
+    <description>
+        <p>
+            A Mod for the PC version of Ori and the Will of the Wisps. It shuffles the location of items and adds more
+            features to the original game. It even allows you to play with your friends in multiplayer sessions! This
+            mod greatly improves the replayability of the game and is playable by anyone who has already finished the
+            game once. For more advanced players, harder difficulties will ask you to progress by using more advanced
+            movement options or glitches.
+        </p>
+    </description>
+    <launchable type="desktop-id">com.orirando.wotw.desktop</launchable>
+    <url type="homepage">https://wotw.orirando.com</url>
+    <provides>
+        <id>wotw-randomizer.desktop</id>
+    </provides>
+</component>

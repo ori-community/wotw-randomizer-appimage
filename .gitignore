@@ -1,7 +1,8 @@
 .idea
-appdir/**/*
-!appdir/wotw-randomizer.desktop
-!appdir/wotw-randomizer.png
+
+appdir/opt
+appdir/.DirIcon
+appdir/AppRun
 
 wine.rpm
 dxvk.tar.gz

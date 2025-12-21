@@ -41,11 +41,11 @@ fi
 chmod u+x ./appimagetool
 
 echo "Extracting Wine"
-mkdir appdir/opt/wine
+mkdir -p appdir/opt/wine
 rpm2cpio wine.rpm | bsdtar -xvf - -C appdir/opt/wine --strip-components=3
 
 echo "Extracting DXVK"
-mkdir appdir/opt/dxvk
+mkdir -p appdir/opt/dxvk
 tar -v --extract --file dxvk.tar.gz --strip-components=1 -C appdir/opt/dxvk
 
 echo "Building AppImage"

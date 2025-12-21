@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Ori and the Will of the Wisps Randomizer
 Exec="/opt/wotw-randomizer/Ori and the Will of the Wisps Randomizer"
-Icon=wotw-randomizer
+Icon=com.orirando.wotw
 Type=Application
 Categories=Game;
