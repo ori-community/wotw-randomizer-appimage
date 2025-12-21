@@ -6,12 +6,6 @@
 #include <libgen.h>
 #include <unistd.h>
 
-#define bail(...) { \
-    std::fprintf(std::cerr, "Error: " __VA_ARGS__); \
-    exit(1); \
-    return 1; \
-}
-
 void set_env(const std::string& name, const std::string& value) {
     std::string new_env(std::format("{}={}", name, value));
     putenv(new_env.data());
