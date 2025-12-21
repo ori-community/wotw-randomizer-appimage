@@ -1,0 +1,8 @@
+.idea
+appdir/**/*
+!appdir/wotw-randomizer.desktop
+!appdir/wotw-randomizer.png
+
+wine.rpm
+dxvk.tar.gz
+appimagetool

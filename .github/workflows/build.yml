@@ -1,0 +1,25 @@
+name: build
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Install bsdtar
+        run: sudo apt-get -y install libarchive-tools
+
+      - name: Checkout 🛎
+        uses: actions/checkout@v6
+
+      - name: Insert fake launcher
+        run: |
+          mkdir -p appdir/opt/wotw-randomizer
+          echo "placeholder" > "appdir/opt/wotw-randomizer/Ori and the Will of the Wisps Randomizer"
+
+      - name: Build AppImage
+        run: ./build.sh
