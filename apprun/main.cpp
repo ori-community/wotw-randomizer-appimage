@@ -35,6 +35,17 @@ int main(int argc, char* argv[]) {
         )
     );
 
+    set_env(
+        "PATH",
+        std::format(
+            "{0}/opt/wine/bin/:{1}",
+            appdir,
+            getenv("PATH") ? : ""
+        )
+    );
+
+    set_env("WOTW_RANDOMIZER_APPIMAGE_ROOT", appdir);
+
     const std::string executable_path(std::format("{}/opt/wotw-randomizer/Ori and the Will of the Wisps Randomizer", appdir));
     std::cout << std::format("Executing '{}'", executable_path) << std::endl;
     const int return_code = execvp(executable_path.c_str(), argv);
