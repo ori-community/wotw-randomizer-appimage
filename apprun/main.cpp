@@ -32,7 +32,7 @@ int main(int argc, char* argv[]) {
     set_env(
         "PATH",
         std::format(
-            "{0}/opt/wine/bin/:{1}",
+            "{0}/opt/proton-ge/files/bin/:{1}",
             appdir,
             getenv("PATH") ? : ""
         )
