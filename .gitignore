@@ -4,5 +4,6 @@ appdir/opt
 appdir/.DirIcon
 appdir/AppRun
 
-proton-ge.tar.gz
+wine.rpm
+dxvk.tar.gz
 appimagetool
