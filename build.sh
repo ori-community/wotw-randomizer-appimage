@@ -30,7 +30,7 @@ curl -fSL -o appimagetool https://github.com/AppImage/appimagetool/releases/down
 sha256sum -c << EOF
 689a8f946048ae74646b63bda653a9354b806e387f656f2ca2aac8bff9058974  wine.rpm
 d85ce7c79f57ecd765aaa1b9e7007cb875e6fde9f6d331df799bce73d513ce87  dxvk.tar.gz
-a6d71e2b6cd66f8e8d16c37ad164658985e0cf5fcaa950c90a482890cb9d13e0  appimagetool
+95cbe7cce9717fce90c484e34052ee7c7f1d7635b33c12525b4776826a7d29b6  appimagetool
 EOF
 
 if [ $? != 0 ]; then
