@@ -23,12 +23,12 @@ echo "Building AppRun binary"
 echo "Copying AppRun binary into AppDir"
 cp -v apprun/build/AppRun appdir/AppRun
 
-curl -fSL -o wine.rpm https://dl.winehq.org/wine-builds/fedora/43/x86_64/wine-staging-11.7-1.1.x86_64.rpm
+curl -fSL -o wine.rpm https://dl.winehq.org/wine-builds/fedora/44/x86_64/wine-staging-11.20-1.1.x86_64.rpm
 curl -fSL -o dxvk.tar.gz https://github.com/doitsujin/dxvk/releases/download/v2.7.1/dxvk-2.7.1.tar.gz
 curl -fSL -o appimagetool https://github.com/AppImage/appimagetool/releases/download/continuous/appimagetool-x86_64.AppImage
 
 sha256sum -c << EOF
-689a8f946048ae74646b63bda653a9354b806e387f656f2ca2aac8bff9058974  wine.rpm
+0256454af5b40043af19a10c4b2fa61f179df6fcf6141b2f95929a011c37874e  wine.rpm
 d85ce7c79f57ecd765aaa1b9e7007cb875e6fde9f6d331df799bce73d513ce87  dxvk.tar.gz
 95cbe7cce9717fce90c484e34052ee7c7f1d7635b33c12525b4776826a7d29b6  appimagetool
 EOF
