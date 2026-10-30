@@ -30,7 +30,7 @@ cp -v apprun/build/AppRun appdir/AppRun
 sha256sum -c << EOF
 0256454af5b40043af19a10c4b2fa61f179df6fcf6141b2f95929a011c37874e  wine.rpm
 d85ce7c79f57ecd765aaa1b9e7007cb875e6fde9f6d331df799bce73d513ce87  dxvk.tar.gz
-95cbe7cce9717fce90c484e34052ee7c7f1d7635b33c12525b4776826a7d29b6  appimagetool
+793fca0ce4bcc309dc65d3f66669f58e3755643e4dadbe03932e7b436128494f  appimagetool
 EOF
 
 if [ $? != 0 ]; then
