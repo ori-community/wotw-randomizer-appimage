@@ -1,7 +1,6 @@
 .idea
 
 appdir/opt
-appdir/.DirIcon
 appdir/AppRun
 
 wine.rpm
