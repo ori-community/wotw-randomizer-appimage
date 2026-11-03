@@ -24,13 +24,13 @@ echo "Copying AppRun binary into AppDir"
 cp -v apprun/build/AppRun appdir/AppRun
 
 [ -f wine.rpm ] || curl -fSL -o wine.rpm https://dl.winehq.org/wine-builds/fedora/44/x86_64/wine-staging-11.20-1.1.x86_64.rpm
-[ -f dxvk.tar.gz ] || curl -fSL -o dxvk.tar.gz https://github.com/doitsujin/dxvk/releases/download/v2.7.1/dxvk-2.7.1.tar.gz
-[ -f appimagetool ] || curl -fSL -o appimagetool https://github.com/AppImage/appimagetool/releases/download/continuous/appimagetool-x86_64.AppImage
+[ -f dxvk.tar.gz ] || curl -fSL -o dxvk.tar.gz https://github.com/doitsujin/dxvk/releases/download/v3.1.1/dxvk-3.1.1.tar.gz
+[ -f appimagetool ] || curl -fSL -o appimagetool https://github.com/pkgforge-dev/Anylinux-appimagetool/releases/download/0.5.6/appimagetool-full-x86_64-linux
 
 sha256sum -c << EOF
 0256454af5b40043af19a10c4b2fa61f179df6fcf6141b2f95929a011c37874e  wine.rpm
-d85ce7c79f57ecd765aaa1b9e7007cb875e6fde9f6d331df799bce73d513ce87  dxvk.tar.gz
-793fca0ce4bcc309dc65d3f66669f58e3755643e4dadbe03932e7b436128494f  appimagetool
+40565b4a724aadc4433fa4e010b4b23916d9b1f1baeee64e17186db94f54e608  dxvk.tar.gz
+a92214d831d234d1be31699657c572799e5c8417c9abf129e2f748cc9c612f85  appimagetool
 EOF
 
 if [ $? != 0 ]; then
@@ -49,4 +49,4 @@ mkdir -p appdir/opt/dxvk
 tar -v --extract --file dxvk.tar.gz --strip-components=1 -C appdir/opt/dxvk
 
 echo "Building AppImage"
-./appimagetool ./appdir WotwRandomizer.AppImage
+./appimagetool -n WotwRandomizer.AppImage ./appdir
